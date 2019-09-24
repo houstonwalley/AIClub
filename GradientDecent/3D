@@ -1,4 +1,5 @@
 #3D gradient decent
+
 from mpl_toolkits import mplot3d
 %matplotlib inline
 import matplotlib.pyplot as plt
@@ -9,18 +10,13 @@ fig = plt.figure()
 ax = plt.axes(projection='3d')
 
 ALPHA = 0.01
-x = np.arange(-1, 1, 0.01)
-y = np.arange(-1, 1, 0.01)
-x, y = np.meshgrid(x, y)
-r = np.sqrt(x**2 + y**2)
-z = np.sin(r)
-
 curr_x = np.random.uniform(-1, 1)
 curr_y = np.sqrt(1 - (curr_x**2))
 curr_z = 1
 slopex = 2 * curr_x
 slopey = 2 * curr_y
 
+ax.scatter(curr_x, curr_y, curr_z, color='red')
 while abs(slopex) > .0001 or abs(slopey) > .0001:
   curr_x -= ALPHA * slopex
   curr_y -= ALPHA * slopey
@@ -30,10 +26,11 @@ while abs(slopex) > .0001 or abs(slopey) > .0001:
   ax.scatter(curr_x, curr_y, curr_z, color='black')
 
   
-ax.scatter(curr_x, curr_y, curr_z, color='red')
-ax.set_xlabel('X Label')
-ax.set_ylabel('Y Label')
-ax.set_zlabel('Z Label')
+ax.scatter(curr_x, curr_y, curr_z, color='blue')
+ax.set_title('3D Gradient Decent')
+ax.set_xlabel('X Axis')
+ax.set_ylabel('Y Axis')
+ax.set_zlabel('Z Axis')
 
 plt.show()
 print('\nThe coordinates of the minimum are (' + str(curr_x) + ', ' + str(curr_y) + ', ' + str(curr_z) + ')')
