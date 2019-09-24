@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 ALPHA = 0.01
-x = np.arange(-1, 1, 0.01)
-y = np.arange(-1, 1, 0.01)
 curr_x = np.random.uniform(-1, 1)
 curr_y = curr_x**2
 slopex = 2*curr_x
@@ -19,4 +17,7 @@ while slopex > 0.0001:
   plt.scatter(curr_x, curr_y, color='black')
 
 plt.scatter(curr_x, curr_y, color='blue')
+plt.title('2D Gradient Decent')
+plt.xlabel('X Axis')
+plt.ylabel('Y Axis')
 plt.show()
