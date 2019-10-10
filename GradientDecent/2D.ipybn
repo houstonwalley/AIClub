@@ -17,7 +17,7 @@ while slopex > 0.0001:
   plt.scatter(curr_x, curr_y, color='black')
 
 plt.scatter(curr_x, curr_y, color='blue')
-plt.title('2D Gradient Decent')
+plt.title('2D Gradient Descent')
 plt.xlabel('X Axis')
 plt.ylabel('Y Axis')
 plt.show()
