@@ -1,4 +1,4 @@
-#2D gradient decent
+#2D gradient descent
 
 import matplotlib.pyplot as plt
 import numpy as np
