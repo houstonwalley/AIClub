@@ -27,7 +27,7 @@ while abs(slopex) > .0001 or abs(slopey) > .0001:
 
   
 ax.scatter(curr_x, curr_y, curr_z, color='blue')
-ax.set_title('3D Gradient Decent')
+ax.set_title('3D Gradient Descent')
 ax.set_xlabel('X Axis')
 ax.set_ylabel('Y Axis')
 ax.set_zlabel('Z Axis')
