@@ -4,8 +4,8 @@ This method follows a function based on its slope to the local minimum. It knows
 it has hit a local minimum whenever the slope is approximately 0.
 
 The Problems: 
-The 2D gradient descent is for the function: y = x^2 
-The 3D gradient descent is for the function: z = x^2 + y^2
+The 2D gradient descent is for the function: y = x^2.
+The 3D gradient descent is for the function: z = x^2 + y^2.
 
 What I Learned: 
 Through these two exercises I learned what a gradient descent was and how to show it 
